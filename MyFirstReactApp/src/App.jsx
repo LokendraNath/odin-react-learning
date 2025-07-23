@@ -1,7 +1,8 @@
 import "./App.css";
+import FeedbackForm from "./Practice/states/state challenges/Gallary.jsx";
 // import { ProfileC } from "./Practice/Props/ChallengePassingJSXchildren.jsx";
 // import { BasicColorClick } from "./Practice/states/basicsStates.jsx";
-import Gallery from "./Practice/states/state examples/Gallary.jsx";
+// import Gallery from "./Practice/states/state challenges/Gallary.jsx";
 // import Profile from "./Practice/Props/PassingJSXchildren.jsx";
 // import Gallery from "./Practice/render/Chalenge/PassingJSXchildren.jsx";
 // import Poem from "./Practice/render/Chalenge/ListWithSeperation";
@@ -16,7 +17,7 @@ function App() {
   return (
     <>
       <div className="min-h-screen bg-blue-900 flex flex-col items-center">
-        <Gallery />
+        <FeedbackForm />
       </div>
     </>
   );
