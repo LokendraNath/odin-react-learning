@@ -1,5 +1,7 @@
 import "./App.css";
-import { BasicColorClick } from "./Practice/states/basicsStates.jsx";
+// import TravelPlan from "./Practice/states/basic nested/TravelPlan.jsx";
+import MailClient from "./Practice/states/state challenges/Highlited Letter/MainClient.jsx";
+// } from "./Practice/states/basicsStates.jsx";
 // import FeedbackForm from "./Practice/states/state challenges/Gallary.jsx";
 // import { ProfileC } from "./Practice/Props/ChallengePassingJSXchildren.jsx";
 // import { BasicColorClick } from "./Practice/states/basicsStates.jsx";
@@ -18,7 +20,8 @@ function App() {
   return (
     <>
       <div className="min-h-screen bg-blue-900 flex flex-col items-center">
-        <BasicColorClick />
+        <MailClient />
+        <h1>Hii</h1>
       </div>
     </>
   );
