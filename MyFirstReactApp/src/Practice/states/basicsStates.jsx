@@ -4,29 +4,44 @@ import React, { useState } from "react";
 const COLORS = ["pink", "green", "blue", "yellow", "purple"];
 
 export function BasicColorClick() {
-  const [backgroundColor, setBackgroundColor] = useState(COLORS[0]);
+  const [name, setName] = useState({ first: "", last: "" });
 
-  const onButtonClick = (color) => () => {
-    setBackgroundColor(color);
+  const handleSetName = (e) => {
+    const { name, value } = e.target;
+    setName((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
   return (
-    <div
-      className="flex items-center rounded-3xl p-10 "
-      style={{
-        backgroundColor,
-      }}
-    >
-      {COLORS.map((color) => (
-        <button
-          type="button"
-          key={color}
-          onClick={onButtonClick(color)}
-          className="py-3 px-5 text-black bg-white mr-5 rounded-2xl"
-        >
-          {color}
-        </button>
-      ))}
+    <div className="flex flex-col items-center rounded-3xl p-10 text-white">
+      <h1 className="text-4xl mb-5">Practice Object States</h1>
+      <label className="flex gap-4 items-center">
+        Enter First Name
+        <input
+          type="text"
+          name="first"
+          onChange={handleSetName}
+          value={name.first}
+          placeholder="First Name"
+          className="border-2 border-white"
+        />
+      </label>
+      <label className="flex gap-4 items-center">
+        Enter Second Name
+        <input
+          type="text"
+          name="last"
+          value={name.last}
+          onChange={handleSetName}
+          placeholder="Last Name"
+          className="border-2 border-white"
+        />
+      </label>
+      <p>
+        {name.first} {name.last}
+      </p>
     </div>
   );
 }
