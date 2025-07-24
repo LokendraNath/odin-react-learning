@@ -1,5 +1,4 @@
 import { useState } from 'react';
-/*
 export default function TrafficLight() {
   const [walk, setWalk] = useState(true);
 
@@ -21,7 +20,6 @@ export default function TrafficLight() {
     </>
   );
 }
-*/
 
 import AddItem from './AddItem.js';
 import PackingList from './PackingList.js';
@@ -33,7 +31,7 @@ const initialItems = [
   { id: 2, title: 'Watercolors', packed: false },
 ];
 
-export default function TravelPlan() {
+export function TravelPlan() {
   const [items, setItems] = useState(initialItems);
 
   const total = items.length;
