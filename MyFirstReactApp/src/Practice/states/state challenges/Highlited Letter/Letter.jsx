@@ -6,22 +6,22 @@ export default function Letter({
 }) {
   return (
     <li
-      className={
-        isHighlighted ? 'highlighted' : ''
-      }
+      className={isHighlighted ? "highlighted" : ""}
       onFocus={() => {
-        onHover(letter);        
+        onHover(letter);
       }}
       onPointerMove={() => {
         onHover(letter);
       }}
     >
-      <button onClick={() => {
-        onToggleStar(letter);
-      }}>
-        {letter.isStarred ? 'Unstar' : 'Star'}
+      <button
+        onClick={() => {
+          onToggleStar(letter);
+        }}
+      >
+        {letter.isStarred ? "Unstar" : "Star"}
       </button>
       {letter.subject}
     </li>
-  )
+  );
 }
