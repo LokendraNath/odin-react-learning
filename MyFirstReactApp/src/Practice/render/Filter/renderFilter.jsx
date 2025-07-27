@@ -16,6 +16,5 @@ export function AllPhysicists() {
       </div>
     </li>
   ));
-
   return <ul>{list}</ul>;
 }

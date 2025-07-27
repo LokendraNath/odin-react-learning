@@ -1,8 +1,10 @@
 import { useState } from "react";
 
 export default function Accordion() {
+
   // const [isActive, setIsActive] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <>
       <h2>Almaty, Kazakhstan</h2>
@@ -30,11 +32,12 @@ export default function Accordion() {
 }
 
 function Panel({ title, children, isActive, onShow }) {
+
   return (
     <section className="panel">
-      {console.log(children)}
       <h3>{title}</h3>
       {isActive ? <p>{children}</p> : <button onClick={onShow}>Show</button>}
     </section>
   );
+  
 }

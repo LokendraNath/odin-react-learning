@@ -1,6 +1,7 @@
 import { RenderList } from "./renderLIMap";
 
 export function RenderLists({allSeries}) {
+
   return (
     <ul>
       {allSeries.map((seriesList) => {
@@ -8,4 +9,5 @@ export function RenderLists({allSeries}) {
       })}
     </ul>
   );
+  
 }

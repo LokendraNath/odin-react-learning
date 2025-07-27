@@ -18,9 +18,6 @@ export default function Poem() {
     )
   })
   output.unshift()
-
-
-
   return (
     <article>
       {output}
