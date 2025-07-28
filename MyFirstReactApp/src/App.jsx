@@ -1,12 +1,10 @@
-import "./App.css";
-import Clock from "./Practice/useEffect/basicEffect";
-
+import { CountInputChanges } from "./Practice/useEffect/basicEffect";
 
 function App() {
   return (
     <>
       <div className="min-h-screen flex flex-col items-center">
-       <Clock />
+        <CountInputChanges />
       </div>
     </>
   );
