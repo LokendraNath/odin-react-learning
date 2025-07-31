@@ -1,13 +1,8 @@
-import { CountInputChanges } from "./Practice/useEffect/basicEffect";
+// import ReactTesting from "./Practice/React Testing/ReactTesting";
+import TodoList from "./Practice/React Testing/ToDoList/ToDoList";
 
 function App() {
-  return (
-    <>
-      <div className="min-h-screen flex flex-col items-center">
-        <CountInputChanges />
-      </div>
-    </>
-  );
+  return <TodoList />;
 }
 
 export default App;
