@@ -1,5 +1,4 @@
 // Rinos.jsx
-
 import { useState } from "react";
 
 const HumanEvilustion = () => {
