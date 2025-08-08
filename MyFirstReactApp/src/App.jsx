@@ -1,12 +1,13 @@
-// import ReactTesting from "./Practice/React Testing/ReactTesting";
-// import TodoList from "./Practice/React Testing/ToDoList/ToDoList";
+// import { UseReducer } from "./Practice/hooks/useReducer/Index";
+// import YtLearnign from "./Practice/hooks/useReducer/YtLearnign";
 
-// import App5 from "./Practice/useContext/example 5/App5.jsx";
-// import MyApp6 from "./Practice/useContext/Example6.jsx";
-import MyApp7 from "./Practice/useContext/ThemeOverriding7.jsx";
-// import MyApp from "./Practice/useContext/multiContext.jsx";
+import OdinReducer from "./Practice/hooks/useReducer/Odin";
 
 function App() {
-  return <MyApp7 />;
+  return (
+    <div className="min-h-screen items-center justify-center">
+      <OdinReducer />
+    </div>
+  );
 }
 export default App;
