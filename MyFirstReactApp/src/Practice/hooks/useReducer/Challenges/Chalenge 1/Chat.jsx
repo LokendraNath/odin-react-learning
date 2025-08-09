@@ -10,7 +10,15 @@ export default function Chat({ contact, message, dispatch }) {
         }}
       />
       <br />
-      <button className="bg-blue-500 py-2 px-4 rounded-2xl">Send to {contact.email}</button>
+      <button
+        onClick={() => {
+          alert(`Message: ${message} to ${contact.email}`);
+          dispatch({ type: "edited_message", message: "" });
+        }}
+        className="bg-blue-500 py-2 px-4 rounded-2xl"
+      >
+        Send to {contact.email}
+      </button>
     </section>
   );
 }
