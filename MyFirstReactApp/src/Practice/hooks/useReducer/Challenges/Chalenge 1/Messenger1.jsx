@@ -4,10 +4,9 @@ import { useReducer } from "react";
 import Chat from "./Chat.jsx";
 import ContactList from "./ContactList.jsx";
 import { initialState, messengerReducer } from "./MessengerReducer.jsx";
-
 export default function Messenger() {
   const [state, dispatch] = useReducer(messengerReducer, initialState);
-  const message = state.message;
+  const message = state.messages[state.selectedId];
   const contact = contacts.find((c) => c.id === state.selectedId);
 
   return (
