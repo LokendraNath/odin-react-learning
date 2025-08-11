@@ -1,6 +1,4 @@
 import { memo } from "react";
-
-/* eslint-disable no-unused-vars */
 export const NavBar = ({ adjective, getAdjective }) => {
   console.log("Navbar is render");
 
